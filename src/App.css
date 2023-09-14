@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+.text-azzurro {
+  color: #2fa7da !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bordo-modale {
+  border-bottom: 2px solid yellow !important;
+}
+.text-yellow {
+  color: yellow !important;
+}
+.text-blu {
+  color: #022c43 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-blu {
+  background-color: #022c43 !important;
+}
+.icone:hover {
+  color: yellow !important;
 }
 
-.App-header {
-  background-color: #282c34;
+.bg-giallo {
+  background-color: yellow !important;
+}
+
+body {
+  background-color: #022c43 !important;
+
+  overflow-y: auto;
+  overflow-x: hidden;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Lora", serif;
+}
+.test {
+  background-color: black !important;
+}
+.footer {
+  cursor: auto;
+  border-top: 5px solid yellow;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.letter {
+  animation: bounce 1.3s ease-in infinite;
+  animation-delay: calc(0.1s * var(--i));
+  animation-fill-mode: both;
+  display: inline-block;
+  text-shadow: 3px 2px 1px #2fa7da;
+}
+
+.letter:nth-child(1) {
+  --i: 1;
+}
+.letter:nth-child(2) {
+  --i: 2;
+}
+.letter:nth-child(3) {
+  --i: 3.2;
+}
+.letter:nth-child(4) {
+  --i: 4;
+}
+.letter:nth-child(5) {
+  --i: 5.2;
+}
+.letter:nth-child(6) {
+  --i: 6;
+}
+.letter:nth-child(7) {
+  --i: 7.2;
+}
+.letter:nth-child(8) {
+  --i: 8;
+}
+.letter:nth-child(9) {
+  --i: 9.2;
+}
+
+.home-display {
+  min-height: 85vh;
+}
+
+.img-profilo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  box-shadow: 0px 0px 21px 0px #2fa7da;
+}
+
+.bg-azzurro {
+  background-color: #2fa7da !important;
+}
+
+.container-about {
+  min-height: 85vh;
+}
+.img-skills {
+  width: 50%;
+}
+.progetto-card {
+  height: 400px !important;
+
+  background-size: cover;
+  background-position: 50%;
+  cursor: auto;
+  transition: all 0.8s linear;
+}
+
+.sfondo-opaco {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(
+    185deg,
+    rgba(255, 243, 0, 0.9052871148459384) 3%,
+    rgba(0, 0, 0, 0.8856792717086834) 86%
+  );
+}
+
+.testo-card {
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  bottom: -70px !important;
+
+  position: absolute !important;
+}
+.testo-card:hover {
+  z-index: 2;
+  bottom: 0 !important;
+}
+.bottone-visualizza {
+  opacity: 0;
+}
+
+.bottone-visualizza.show {
+  opacity: 1;
 }
