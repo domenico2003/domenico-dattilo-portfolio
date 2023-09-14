@@ -32,8 +32,8 @@ const Contact = () => {
   return (
     <>
       {" "}
-      <Container className=" mt-5 mb-5 pb-5  contactContent">
-        <p class="text-center text-yellow h3">
+      <Container className=" mb-5 pb-5  contactContent">
+        <p class="text-center text-yellow h3 mt-3">
           <span className="letter">C</span>
           <span className="letter">O</span>
           <span className="letter">N</span>
@@ -47,7 +47,8 @@ const Contact = () => {
         </p>
 
         <Row className=" mt-4">
-          <Col md={6}>
+          <Col md={6} className="">
+            <p className="text-center h2 fw-bold text-azzurro">Dove mi trovo</p>
             <div className="h-100 mb-3">
               <div id="gmap-canvas" className="h-100">
                 <iframe
@@ -61,6 +62,9 @@ const Contact = () => {
           </Col>
 
           <Col md={6}>
+            <p className="text-center h2 fw-bold mt-5 mt-md-0 text-azzurro">
+              Inviami un'email!
+            </p>
             <Form onSubmit={handleSubmit} className="mt-3 mt-md-0">
               <Form.Control
                 type="text"
@@ -82,7 +86,7 @@ const Contact = () => {
                 disabled={risultato}
                 onChange={(e) => setEmail(e.target.value)}
                 className="form-control mt-3"
-                placeholder="Email"
+                placeholder="Email mittente"
               />
               <Form.Control
                 type="text"
