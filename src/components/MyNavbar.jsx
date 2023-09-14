@@ -40,7 +40,7 @@ const MyNavbar = () => {
                   : "mx-3 text-white text-decoration-none"
               }
             >
-              about me
+              About me
             </Link>
             <Link
               to="/portfolio"
@@ -50,7 +50,7 @@ const MyNavbar = () => {
                   : "mx-3 text-white text-decoration-none"
               }
             >
-              portfolio
+              Portfolio
             </Link>
             <Link
               to="contact"

@@ -9,14 +9,14 @@ import energy from "../src/images/energy.png";
 export const project = [
   {
     img: GamerHub,
-    nome: "GamerHub",
+    nome: "GAMERHUB",
     descrizione:
       "Capsone project realizato sia in back-end che in front-end con le tecnologie utilizzate durante il corso. Trovate tutto su git Hub.",
     linkRepo: "https://github.com/domenico2003/Capstone-Project-FE",
   },
   {
     img: Linkedin,
-    nome: "Clone di LinkedIn",
+    nome: "CLONE  LINKEDIN",
     descrizione:
       "Build week n°3 di front-end realizzata in collaborazione con altri colleghi di corso.",
     linkRepo: "https://github.com/domenico2003/build-week-3",
@@ -30,20 +30,20 @@ export const project = [
   },
   {
     img: meteo,
-    nome: "app meteo",
+    nome: "APP METEO",
     descrizione: "applicazione front-end realizata in react con API esterne.",
     linkRepo: "https://github.com/domenico2003/u3-s2-progetto-settimanale",
   },
   {
     img: netflix,
-    nome: "clone Netflix",
+    nome: "CLONE NETFLIX",
     descrizione:
       "Applicazione Front-end realizzata prima in css,html,js e poi fatto Refactor con react.",
     linkRepo: "https://github.com/domenico2003/u3-s1-progetto-settimanale",
   },
   {
     img: energy,
-    nome: "Epic-Energy-Services",
+    nome: "EPIC ENERGY SERVICES",
     descrizione:
       "Build week n°5 di back-end realizzata in collaborazione con altri colleghi di corso. lo scopo di questo progetto era quello di realizzare le API per un'azienda di energia elettrica.",
     linkRepo:

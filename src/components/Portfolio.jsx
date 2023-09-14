@@ -6,6 +6,11 @@ import { BsFillExclamationTriangleFill } from "react-icons/bs";
 const Portfolio = () => {
   return (
     <Container className="mt-5">
+      <Row xs={1} sm={2} md={3} lg={4} className="justify-content-center mt-5">
+        {project.map((progetto) => (
+          <SingleProject progetto={progetto} />
+        ))}
+      </Row>
       <Alert
         variant="warning"
         className="text-center d-flex alignn-items-center justify-content-center animate__shakeX animate__animated"
@@ -22,11 +27,6 @@ const Portfolio = () => {
           </span>
         </span>
       </Alert>
-      <Row xs={1} sm={2} md={3} lg={4} className="justify-content-center mt-5">
-        {project.map((progetto) => (
-          <SingleProject progetto={progetto} />
-        ))}
-      </Row>
     </Container>
   );
 };
