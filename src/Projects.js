@@ -5,6 +5,8 @@ import Linkedin from "../src/images/linkedin.png";
 import meteo from "../src/images/meteo.png";
 import netflix from "../src/images/netflix.png";
 import energy from "../src/images/energy.png";
+import olivoil from "../src/images/olivoil-screenshot.png";
+import ngAuto from "../src/images/foto-ng-app.png";
 
 export const project = [
   {
@@ -48,5 +50,19 @@ export const project = [
       "Build week n°5 di back-end realizzata in collaborazione con altri colleghi di corso. lo scopo di questo progetto era quello di realizzare le API per un'azienda di energia elettrica.",
     linkRepo:
       "https://github.com/Massimiliano2022/U2-W4-BW-Epic-Energy-Services",
+  },
+  {
+    img: olivoil,
+    nome: "Olivoil",
+    descrizione:
+      "Progetto realizzato utilizzando wordpress, imparato da autodidatta. E’ un sito informativo riguardo all’olio d’oliva con articoli commentabili di ricette con le olive",
+    linkRepo: "https://github.com/domenico2003/olivoil",
+  },
+  {
+    img: ngAuto,
+    nome: "Concessionaria auto (NG Auto)",
+    descrizione:
+      "Sito full-stack, permette divedere le auto che possiede l’azienda con tutti i dettagli ed effettuare richieste di noleggio per le auto predisposte. Ci si può accedere e sono presenti due ruoli: User, ogni nuovo account a questo ruolo e Admin, che sono i dipendenti dell’azienda e possono gestire il sito in tutte le sue funzioni.",
+    linkRepo: "https://github.com/domenico2003/ngauto-app",
   },
 ];

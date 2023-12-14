@@ -12,7 +12,11 @@ const SingleProject = ({ progetto }) => {
         style={{ backgroundImage: `url(${progetto.img})` }}
       >
         {" "}
-        {hover && <div className="sfondo-opaco rounded-4"></div>}
+        {hover ? (
+          <div className="sfondo-opaco rounded-4"></div>
+        ) : (
+          <div className="sfondo-semi-opaco rounded-4"></div>
+        )}
         <Card.ImgOverlay
           className={`d-flex align-items-end justify-content-center testo-card  ${
             hover ? "text-white " : "text-yellow "

@@ -10,7 +10,7 @@ import spring from "../images/spring-original.svg";
 import java from "../images/java.svg";
 import postgresql from "../images/postgresql.svg";
 import postman from "../images/postman.svg";
-import trello from "../images/trello.svg";
+import wordpress from "../images/wordpress.png";
 
 import { Col, Container, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
@@ -121,7 +121,7 @@ const About = () => {
               </Col>
 
               <Col className="text-center animate__zoomIn animate__animated">
-                <ImmagineMovibile url={trello} />
+                <ImmagineMovibile url={wordpress} />
               </Col>
             </Row>
           </Col>
